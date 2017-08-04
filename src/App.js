@@ -29,6 +29,7 @@ class App extends Component {
 
     removeContact = ((contact) => {
         this.setState((state) => ({
+            //note contacts is object literal so it needs to wrap inside paranthesis
             contacts: state.contacts.filter((c) => c.id !== contact.id)
         }))
     });
